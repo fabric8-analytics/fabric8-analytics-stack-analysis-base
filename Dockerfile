@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Avishkar Gupta <avgupta@redhat.com>
+LABEL maintainer="Avishkar Gupta <avgupta@redhat.com>"
 
 # Need two yum installs here otherwise python-pip is not found
 RUN yum install -y epel-release && \
