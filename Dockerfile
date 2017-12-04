@@ -11,4 +11,6 @@ RUN yum install -y epel-release && \
 # --------------------------------------------------------------------------------------------------
 COPY ./hack/requirements.txt /
 RUN pip install -r /requirements.txt && rm /requirements.txt
+# There's an upstream bug with dependency resolution
+# keep this here, outside requirements!!
 RUN pip install pomegranate==0.7.3
