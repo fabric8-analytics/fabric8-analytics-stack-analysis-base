@@ -3,7 +3,7 @@ LABEL maintainer="Avishkar Gupta <avgupta@redhat.com>"
 
 # Need two yum installs here otherwise python-pip is not found
 RUN yum install -y epel-release && \
-    yum install -y zip python-pip python-devel gcc make gcc-c++.x86_64 && \
+    yum install -y zip python-pip python-devel gcc gcc-c++.x86_64 && \
     yum clean all
 
 # --------------------------------------------------------------------------------------------------
