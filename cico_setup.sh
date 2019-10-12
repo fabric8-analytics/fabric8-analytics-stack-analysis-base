@@ -42,7 +42,7 @@ push_image() {
     image_name=$(make get-image-name)
     image_repository=$(make get-image-repository)
     short_commit=$(git rev-parse --short=$DEVSHIFT_TAG_LEN HEAD)
-    push_registry="push.registry.devshift.net"
+    push_registry="quay.io"
 
     # login first
     if [ -n "${QUAY_USERNAME}" -a -n "${QUAY_PASSWORD}" ]; then
